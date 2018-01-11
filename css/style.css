@@ -1,1 +1,12 @@
+body{
+    background-color: brown;
+}
+div {
+  line-height: 20px;
+  text-align: center;
+}
 
+#zero{
+    text-align: bottom;
+}
+}
