@@ -8,14 +8,21 @@
 $( document ).ready(function() {
 
 $("button").click(function(){
-	 var word = $("input").val();
-	 var result = inator(word);
-	 $(".print").text(result);
+	 var word = $("input").val() + "ay";
+	 var result = sentenceToPigLatin(word);
+	 $(".print").text(word);
 });
 
-function inator (word) {
-	return word + "ay";
+function sentenceToPigLatin (word) {
+	var array = word.split(' '); 
+		for (var i = 0; i < array.length; i++){
+		return(array[i] + "ay");
+	}
 }
+
+
+
+
 
 });
 
