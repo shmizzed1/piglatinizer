@@ -8,26 +8,41 @@
 $( document ).ready(function() {
 
 $("button").click(function(){
-	 var word = $("input").val() + "ay";
-	 var result = sentenceToPigLatin(word);
-	 $(".print").text(word);
+	 var a = $("input").val();
+	 var result = sentenceToPigLatin(a);
+	 $(".print").text(result);
 });
 
-function sentenceToPigLatin (word) {
-	var array = word.split(' '); 
-		for (var i = 0; i < array.length; i++){
-		return(array[i] + "ay");
-	}
-}
 
+function sentenceToPigLatin(word) {
+	var arr = word.split(' ');
+		for (var i = 0; i < arr.length; i++){
+			if (arr[i].slice(0,1) = "b" || "c" || "d" ||  "f" || "g" || "j" || "k" || "m" || "n" || "l" || "p" || "q" || "r" ||"s" || "t" || "v" || "w" || "x" || "z" ){
+			arr[i] = arr[i] + "ay "
+			else ()
+			{
+			arr[i] = arr[i] + "cat "
+			}
+		}
+	return arr;
+}	
 
-
-
-
-});
 
 
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
+/*function ayadder(arr){
+	for (var i = 0; i < arr.length; i++){
+	return(array[i] + "ay");
+	}
+	
+}
+*/
+
+
+
+
+});
+
 
 
 
