@@ -7,5 +7,7 @@ div {
 }
 
 #zero{
-    text-align: bottom;
+   position: fixed;
+    bottom: 30px;
+    width: 100%;
 }
